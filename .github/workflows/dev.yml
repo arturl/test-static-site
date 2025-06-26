@@ -44,6 +44,11 @@ jobs:
         with:
           node-version: 18.x
 
+      - name: Test AWS credentials
+        run: |
+          aws sts get-caller-identity
+          aws s3 ls
+
       - run: npm ci
         working-directory: ${{ env.PULUMI_WORKING_DIRECTORY }}
 
