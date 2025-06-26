@@ -2,12 +2,12 @@ name: Preview or update Pulumi app artur-test-org/static-site/dev
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - '**/*'
   pull_request:
     branches:
-      - master
+      - main
     paths:
       - '**/*'
 
