@@ -11,7 +11,7 @@ const errorDocument = config.get("errorDocument") || "error.html";
 // Create an S3 bucket and configure it as a website.
 const bucket = new aws.s3.BucketV2("bucket");
 
-// Create a 3rd S3 bucket and configure it as a website.
+// Create a 3rd S3 bucket and configure it as a website...
 const bucket3 = new aws.s3.BucketV2("bucket3");
 
 // Create a 4rth S3 bucket and configure it as a website.
