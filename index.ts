@@ -12,7 +12,7 @@ const errorDocument = config.get("errorDocument") || "error.html";
 const bucket = new aws.s3.BucketV2("bucket");
 
 // Create a second S3 bucket and configure it as a website.
-const bucket2 = new aws.s3.BucketV2("bucket2");
+const bucket22 = new aws.s3.BucketV2("bucket22");
 
 const bucketWebsite = new aws.s3.BucketWebsiteConfigurationV2("bucketWebsite", {
     bucket: bucket.bucket,
