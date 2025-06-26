@@ -14,9 +14,6 @@ const bucket = new aws.s3.BucketV2("bucket");
 // Create a 3rd S3 bucket and configure it as a website.
 const bucket3 = new aws.s3.BucketV2("bucket3");
 
-// Create a 4rth S3 bucket and configure it as a website.
-const bucket4 = new aws.s3.BucketV2("bucket4");
-
 const bucketWebsite = new aws.s3.BucketWebsiteConfigurationV2("bucketWebsite", {
     bucket: bucket.bucket,
     indexDocument: {suffix: indexDocument},
