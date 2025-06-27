@@ -8,7 +8,7 @@ const path = config.get("path") || "./www";
 const indexDocument = config.get("indexDocument") || "index.html";
 const errorDocument = config.get("errorDocument") || "error.html";
 
-// Create an S3 bucket and configure it as a website.
+// Create an S3 bucket and configure it as a website...
 const bucket = new aws.s3.BucketV2("bucket");
 
 // Create a 3rd S3 bucket and configure it as a website.
